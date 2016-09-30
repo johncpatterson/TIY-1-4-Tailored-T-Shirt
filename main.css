@@ -18,7 +18,6 @@ body {
 .right_shirt {
     display: inline-block;
     width: 33%;
-    width: 33%;
     height: 520px;
     margin: 30px auto;
     padding: 10px 25px 10px 25px;
@@ -94,7 +93,7 @@ body {
     margin: 0 auto;
     padding: 20px 0px 0px 0px;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .small_pic_1:hover,
@@ -190,4 +189,14 @@ span {
     .right_shirt {
         width: 100%;
     }
+    .small_pic_1,
+    .small_pic_2,
+    .small_pic_3,
+    .small_pic_4,
+    .small_pic_5 {
+        font-size: 25px;
+    }
+    .bottom {
+        font-size: 35px;
+    }  
 }
