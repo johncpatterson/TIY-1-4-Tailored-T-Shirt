@@ -1,0 +1,106 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.left_shirt,
+.middle_shirt,
+.right_shirt {
+    display: inline-block;
+    width: 33%;
+    width: 400px;
+    height: 520px;
+    margin: 30px auto;
+    padding: 10px 25px 10px 25px;
+    vertical-align: top;
+}
+
+.container {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+
+.top {
+    margin: 0px auto 0px auto;
+    border-top: 3px solid #5CA4D7;
+    border-right: 3px solid #5CA4D7;
+    border-bottom: 3px solid #5CA4D7;
+    border-left: 3px solid #5CA4D7;
+    
+    
+}
+
+.middle {
+    display: block;
+    margin: 0px auto 0px auto;
+    vertical-align: middle;
+    border-top: 0px;
+    border-right: 3px solid #5CA4D7;
+    border-bottom: 0px ;
+    border-left: 3px solid #5CA4D7;
+    height: 60px;
+}
+
+.bottom {
+    margin: 0px;
+    padding: 0px;
+    border-top: 3px solid #5CA4D7;
+    border-bottom: 0px;
+    height: 53px;
+    
+}
+
+.small_pic_1,
+.small_pic_2,
+.small_pic_3,
+.small_pic_4,
+.small_pic_5 {
+    display: inline-block;
+    width: 19%;
+    height: 60px;
+    color: #5CA4D7;
+    text-align: center;
+    border-top: 0px;
+    border-right: 3px solid #5CA4D7;
+    border-bottom: 0px ;
+    border-left: 3px solid #5CA4D7;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    vertical-align: middle;
+}
+.small_pic_3, .small_pic_4 {
+    position: relative;
+}
+
+.shirt {
+    max-width: 330px;
+    height: 320px;
+    margin: 5px auto;
+}
+
+.text_left {
+    text-align: left;
+    width: 78%;
+}
+
+.text_right {
+    text-align: right;
+    width: 19%;
+}
+
+span {
+    display: inline-block;
+}
+
+@media screen and (min-width:350px) and (max-width: 990px) {
+    .left_shirt,
+    .middle_shirt,
+    .right_shirt {
+        width: 100%;
+    }
+}
