@@ -93,7 +93,7 @@ body {
     margin: 0 auto;
     padding: 20px 0px 0px 0px;
     vertical-align: middle;
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .small_pic_1:hover,
@@ -127,7 +127,7 @@ body {
     height: 30px;
     margin: -5px auto;
     background-color: #5CA4D7;
-    vertical-align: 
+    vertical-align:
 }
 
 .small_pic_4_color_pink {
@@ -183,6 +183,74 @@ span {
     display: inline-block;
 }
 
+
+/*Dropdown menus*/
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content-shirts {
+    display: none;
+    position: absolute;
+    top: -270px;
+    left: -67px;
+    background-color: #f9f9f9; 
+    padding: 25px; 
+}
+
+.dropdown-content-colors {
+    display: none;
+    position: absolute;
+    top: -258px;
+    left: -39px;
+    background-color: #f9f9f9; 
+    padding: 25px; 
+}
+.dropdown_blue,
+.dropdown_pink,
+.dropdown_orange,
+.dropdown_green {
+    width: 45px;
+    height: 45px;
+}
+.dropdown_blue {
+    background-color: #5CA4D7;
+}
+.dropdown_pink {
+    background-color: #D482AA;
+}
+.dropdown_orange {
+    background-color: #DCB07D;
+}
+.dropdown_green {
+    background-color: green;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.small_pic_3:hover .dropdown-content-shirts {
+    display: block;
+    background-color: white;
+    border: 3px solid #5CA4D7;
+}
+.small_pic_4:hover .dropdown-content-colors {
+    display: block;
+    background-color: white;
+    border: 3px solid #5CA4D7;
+}
+
+
+/*media queries*/
+
 @media screen and (min-width:350px) and (max-width: 990px) {
     .left_shirt,
     .middle_shirt,
@@ -198,5 +266,8 @@ span {
     }
     .bottom {
         font-size: 35px;
-    }  
+    }
+    .shirt {
+    max-width: 100%;
+    }
 }
