@@ -9,25 +9,26 @@ body {
     color: #5CA4D7;
 }
 
+.container {
+    overflow: hidden;
+}
+
 .left_shirt,
 .middle_shirt,
 .right_shirt {
     display: inline-block;
     width: 33%;
-    width: 400px;
+    width: 33%;
     height: 520px;
     margin: 30px auto;
     padding: 10px 25px 10px 25px;
     vertical-align: top;
 }
 
-.container {
-    width: 100%;
-    margin: 5px 0px 0px 0px;
-}
-
 .top {
+    position: relative;
     margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 0px;
     border-top: 3px solid #5CA4D7;
     border-right: 3px solid #5CA4D7;
     border-bottom: 3px solid #5CA4D7;
@@ -36,13 +37,19 @@ body {
 
 .top_right {
     display: inline-block;
-    position: relative;
+    position: absolute;
     height: 35px;
     width: 35px;
-    top: -330px;
-    left: 310px;
+    top: 0px;
+    right: 0px;
     border-bottom: 3px solid #5CA4D7;
     border-left: 3px solid #5CA4D7;
+    vertical-align: middle;
+}
+
+.top_right:hover {
+    background-color: #5CA4D7;
+    color: white;
 }
 
 .middle {
@@ -57,12 +64,17 @@ body {
 
 .bottom {
     margin: 0px;
-    padding: 15px 5px 0px 8px;
+    padding: 20px 5px 0px 8px;
     border-top: 3px solid #5CA4D7;
     border-bottom: 0px;
     height: 53px;
     font-size: 27px;
     font-family: 'Raleway', sans-serif;
+}
+
+.fa-repeat {
+    padding-top: 8px;
+    padding-left: 8px;
 }
 
 .small_pic_1,
@@ -71,7 +83,7 @@ body {
 .small_pic_4,
 .small_pic_5 {
     display: inline-block;
-    width: 19%;
+    width: 20%;
     height: 60px;
     color: #5CA4D7;
     text-align: center;
@@ -80,7 +92,7 @@ body {
     border-bottom: 0px;
     border-left: 3px solid #5CA4D7;
     margin: 0 auto;
-    padding: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
     vertical-align: middle;
     font-size: 20px;
 }
@@ -99,6 +111,11 @@ body {
     border-right: 0;
 }
 
+.small_pic_3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
 .small_pic_2,
 .small_pic_3,
 .small_pic_4,
@@ -106,16 +123,50 @@ body {
     border-right: 0;
 }
 
-.small_pic_3,
-.small_pic_4 {
-    position: relative;
+.small_pic_4_color_blue {
+    width: 30px;
+    height: 30px;
+    margin: -5px auto;
+    background-color: #5CA4D7;
+    vertical-align: 
+}
+
+.small_pic_4_color_pink {
+    width: 30px;
+    height: 30px;
+    margin: -5px auto;
+    background-color: #D482AA;
+}
+
+.small_pic_4_color_orange {
+    width: 30px;
+    height: 30px;
+    margin: -5px auto;
+    background-color: #DCB07D;
+}
+
+.small_pic_4:hover > .small_pic_4_color_blue {
+    border: 2px solid white;
+}
+
+.small_pic_4:hover > .small_pic_4_color_pink {
+    border: 2px solid white;
+}
+
+.small_pic_4:hover > .small_pic_4_color_orange {
+    border: 2px solid white;
 }
 
 .shirt {
-    max-width: 330px;
+    max-width: 90%;
     height: 320px;
-    margin: 5px auto;
+    margin: 10px auto;
+    padding: 5px;
     display: block;
+}
+
+img.shirt {
+    margin-top: 10px;
 }
 
 .text_left {
