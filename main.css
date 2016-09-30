@@ -1,4 +1,4 @@
-/*selectors*/
+/*element selectors*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -14,6 +14,9 @@ body {
 span {
     display: inline-block;
 }
+
+
+/*class selectors*/
 
 .container {
     overflow: hidden;
@@ -211,7 +214,7 @@ img.shirt {
     display: none;
     position: absolute;
     top: -135px;
-    left: -51px;
+    left: -50px;
     background-color: #f9f9f9;
     padding: 8px;
     width: 125px;
@@ -257,6 +260,79 @@ img.shirt {
     display: block;
     background-color: white;
     border: 3px solid #5CA4D7;
+}
+
+
+/*arrow on hover border*/
+
+
+/*shirts*/
+
+.dropdown-content-shirts {
+    position: absolute;
+    background: #FFFFFF;
+    border: 3px solid #5CA4D7;
+}
+
+.dropdown-content-shirts:after,
+.dropdown-content-shirts:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.dropdown-content-shirts:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #FFFFFF;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.dropdown-content-shirts:before {
+    border-color: rgba(92, 164, 215, 0);
+    border-top-color: #5CA4D7;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+
+/*colors*/
+
+.dropdown-content-shirts {
+    position: absolute;
+    background: #FFFFFF;
+    border: 3px solid #5CA4D7;
+}
+
+.dropdown-content-colors:after,
+.dropdown-content-colors:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.dropdown-content-colors:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #FFFFFF;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.dropdown-content-colors:before {
+    border-color: rgba(92, 164, 215, 0);
+    border-top-color: #5CA4D7;
+    border-width: 10px;
+    margin-left: -10px;
 }
 
 
