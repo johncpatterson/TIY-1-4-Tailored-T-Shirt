@@ -6,6 +6,7 @@
 
 body {
     background-color: white;
+    color: #5CA4D7;
 }
 
 .left_shirt,
@@ -22,7 +23,7 @@ body {
 
 .container {
     width: 100%;
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 .top {
@@ -31,28 +32,37 @@ body {
     border-right: 3px solid #5CA4D7;
     border-bottom: 3px solid #5CA4D7;
     border-left: 3px solid #5CA4D7;
-    
-    
+}
+
+.top_right {
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    top: -330px;
+    left: 310px;
+    border-bottom: 3px solid #5CA4D7;
+    border-left: 3px solid #5CA4D7;
 }
 
 .middle {
     display: block;
-    margin: 0px auto 0px auto;
+    margin: 0px auto;
     vertical-align: middle;
     border-top: 0px;
     border-right: 3px solid #5CA4D7;
-    border-bottom: 0px ;
+    border-bottom: 0px;
     border-left: 3px solid #5CA4D7;
-    height: 60px;
 }
 
 .bottom {
     margin: 0px;
-    padding: 0px;
+    padding: 15px 5px 0px 8px;
     border-top: 3px solid #5CA4D7;
     border-bottom: 0px;
     height: 53px;
-    
+    font-size: 27px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .small_pic_1,
@@ -67,13 +77,37 @@ body {
     text-align: center;
     border-top: 0px;
     border-right: 3px solid #5CA4D7;
-    border-bottom: 0px ;
+    border-bottom: 0px;
     border-left: 3px solid #5CA4D7;
-    margin: 0px 0px 0px 0px;
+    margin: 0 auto;
     padding: 0px 0px 0px 0px;
     vertical-align: middle;
+    font-size: 20px;
 }
-.small_pic_3, .small_pic_4 {
+
+.small_pic_1:hover,
+.small_pic_2:hover,
+.small_pic_3:hover,
+.small_pic_4:hover,
+.small_pic_5:hover {
+    background-color: #5CA4D7;
+    color: white;
+}
+
+.small_pic_1 {
+    border-left: 0;
+    border-right: 0;
+}
+
+.small_pic_2,
+.small_pic_3,
+.small_pic_4,
+.small_pic_5 {
+    border-right: 0;
+}
+
+.small_pic_3,
+.small_pic_4 {
     position: relative;
 }
 
@@ -81,6 +115,7 @@ body {
     max-width: 330px;
     height: 320px;
     margin: 5px auto;
+    display: block;
 }
 
 .text_left {
@@ -91,6 +126,7 @@ body {
 .text_right {
     text-align: right;
     width: 19%;
+    font-weight: bold;
 }
 
 span {
