@@ -9,6 +9,8 @@
 body {
     background-color: white;
     color: #5CA4D7;
+    height: 100%;
+    width: 100%;
 }
 
 span {
@@ -244,7 +246,7 @@ img.shirt {
 }
 
 .dropdown_green {
-    background-color: green;
+    background-color: #21bc67;
 }
 
 
@@ -254,19 +256,31 @@ img.shirt {
     display: block;
     background-color: white;
     border: 3px solid #5CA4D7;
+    animation-name: movePopUpDown;
+    animation-duration: .3s;
 }
 
 .small_pic_4:hover .dropdown-content-colors {
     display: block;
     background-color: white;
     border: 3px solid #5CA4D7;
+    animation-name: movePopUpDown;
+    animation-duration: .3s;
 }
 
 
-/*arrow on hover border*/
+/*bottom border arrow*/
 
-
-/*shirts*/
+.arrow_down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid white;
+    left: 44%;
+    bottom: -8px;
+}
 
 .dropdown-content-shirts {
     position: absolute;
@@ -274,71 +288,33 @@ img.shirt {
     border: 3px solid #5CA4D7;
 }
 
-.dropdown-content-shirts:after,
-.dropdown-content-shirts:before {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-}
-
-.dropdown-content-shirts:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-top-color: #FFFFFF;
-    border-width: 6px;
-    margin-left: -6px;
-}
-
-.dropdown-content-shirts:before {
-    border-color: rgba(92, 164, 215, 0);
-    border-top-color: #5CA4D7;
-    border-width: 10px;
-    margin-left: -10px;
-}
-
-
-/*colors*/
-
 .dropdown-content-shirts {
     position: absolute;
     background: #FFFFFF;
     border: 3px solid #5CA4D7;
 }
 
-.dropdown-content-colors:after,
-.dropdown-content-colors:before {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-}
 
-.dropdown-content-colors:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-top-color: #FFFFFF;
-    border-width: 6px;
-    margin-left: -6px;
-}
+/*animation*/
 
-.dropdown-content-colors:before {
-    border-color: rgba(92, 164, 215, 0);
-    border-top-color: #5CA4D7;
-    border-width: 10px;
-    margin-left: -10px;
+@keyframes movePopUpDown {
+    0% {
+        margin-top: -40px;
+        opacity: 0;
+    }
+    30% {
+        opacity: .6;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 
 /*media queries*/
 
-@media screen and (min-width:350px) and (max-width: 990px) {
+@media screen and (max-width: 990px) {
     .left_shirt,
     .middle_shirt,
     .right_shirt {
