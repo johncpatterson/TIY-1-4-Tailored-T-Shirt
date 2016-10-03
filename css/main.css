@@ -319,6 +319,7 @@ img.shirt {
     border-top: 8px solid white;
     left: 44%;
     bottom: -8px;
+    animation-name: movePopUpDown;
 }
 
 .dropdown-content-shirts {
