@@ -1,0 +1,22 @@
+{
+  "name": "tiy_1_4_tailored_t_shirt",
+  "version": "1.0.0",
+  "description": "Tailored T Shirt ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johncpatterson/TIY-1-4-Tailored-T-Shirt.git"
+  },
+  "author": "John Patterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johncpatterson/TIY-1-4-Tailored-T-Shirt/issues"
+  },
+  "homepage": "https://github.com/johncpatterson/TIY-1-4-Tailored-T-Shirt#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
