@@ -1,4 +1,4 @@
-# TIY-1-4-Tailore-T-Shirt
+# TIY-1-4-Tailored-T-Shirt
 
 The Iron Yard Cincinnati week 1, day 4 assignment.
 
