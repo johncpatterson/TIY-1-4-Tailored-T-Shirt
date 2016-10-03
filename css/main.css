@@ -17,10 +17,16 @@ span {
     display: inline-block;
 }
 
+img.shirt {
+    max-width: 100%
+}
+
 
 /*class selectors*/
 
 .container {
+    position: relative;
+    margin: 10px auto;
     overflow: hidden;
 }
 
@@ -32,13 +38,58 @@ span {
     height: 520px;
     margin: 30px auto;
     padding: 10px 25px 10px 25px;
-    vertical-align: top;
+}
+
+.flip_container {
+    perspective: 1000px;
+}
+
+.shirt {
+    max-width: 90%;
+    height: 320px;
+    margin: 10px auto;
+    padding: 5px;
+    display: block;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.flip_container:hover .shirt {
+    transform: rotateY(180deg);
+}
+
+.shirt_back {
+    position: absolute;
+    color: white;
+    text-align: center;
+    max-width: 90%;
+    height: 310px;
+    left: 50px;
+    top: 20px;
 }
 
 .top {
     position: relative;
     margin: 0px auto 0px auto;
-    padding: 0px 0px 0px 0px;
+    padding: 18px 0px 0px 0px;
     border-top: 3px solid #5CA4D7;
     border-right: 3px solid #5CA4D7;
     border-bottom: 3px solid #5CA4D7;
@@ -164,18 +215,6 @@ span {
 
 .small_pic_4:hover .small_pic_4_color_orange {
     border: 2px solid white;
-}
-
-.shirt {
-    max-width: 90%;
-    height: 320px;
-    margin: 10px auto;
-    padding: 5px;
-    display: block;
-}
-
-img.shirt {
-    margin-top: 10px;
 }
 
 .text_left {
@@ -332,5 +371,22 @@ img.shirt {
     }
     .shirt {
         max-width: 100%;
+    }
+    .dropdown-content-shirts {
+        display: none;
+        position: absolute;
+        top: -275px;
+        left: -67px;
+        background-color: #f9f9f9;
+        padding: 25px;
+    }
+    .dropdown-content-colors {
+        display: none;
+        position: absolute;
+        top: -133px;
+        left: -50px;
+        background-color: #f9f9f9;
+        padding: 8px;
+        width: 125px;
     }
 }
