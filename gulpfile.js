@@ -1,26 +1,27 @@
 'use strict';
-
+ 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
- return gulp.src('./sass/*.scss')
-   .pipe(sass().on('error', sass.logError))
-   .pipe(gulp.dest('./css'));
-});
+  return gulp.src('./sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.reload({
+      stream: true
+    })
+    )});
 
-gulp.task('sass:watch', function () {
- gulp.watch('./sass/*.scss', ['sass']);
-});
 
-gulp.task('autoprefixer', function () {
-    var postcss      = require('gulp-postcss');
-    // var sourcemaps   = require('gulp-sourcemaps');
-    var autoprefixer = require('autoprefixer');
-
-    return gulp.src('./src/*.css')
-        // .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
-        // .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dest'));
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: ''
+    },
+  })
+})
+ 
+gulp.task('watch',['browserSync','sass'], function () {
+  gulp.watch(['./sass/*.scss','./*.html'], ['sass']);
 });
