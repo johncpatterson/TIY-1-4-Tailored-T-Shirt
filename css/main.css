@@ -45,7 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*element selectors*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -60,7 +59,6 @@ body {
 span {
   display: inline-block; }
 
-/*class selectors*/
 .container {
   width: 100%;
   position: relative;
@@ -86,8 +84,7 @@ span {
   padding: 5px;
   display: block;
   transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative; }
+  transform-style: preserve-3d; }
 
 .front,
 .back {
@@ -98,14 +95,17 @@ span {
 
 .front {
   z-index: 2;
-  transform: rotateY(0deg); }
+  transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg); }
 
 .back {
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
 
 .flip_container:hover
 .shirt {
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
 
 .shirt_back {
   position: absolute;

@@ -1,15 +1,15 @@
-// sass variables
+// Sass variables
 
 $primary-color: white;
-$primary-color-2: black;
+$primary-color-2: gray;
 $font-color: #5CA4D7;
 $border-color: #5CA4D7;
 
-// sass imports
+// Sass imports
 
 @import 'reset';
 
-// sass mixins
+// Sass mixins
 
 @mixin border-box {
    -webkit-box-sizing: border-box;
@@ -17,8 +17,7 @@ $border-color: #5CA4D7;
     box-sizing: border-box; 
 }
 
-
-/*element selectors*/
+// element selectors
 
 * { @include border-box; }
 
@@ -33,7 +32,7 @@ span {
     display: inline-block;
 }
 
-/*class selectors*/
+// class selectors
 
 .container {
     width: 100%;
@@ -41,6 +40,8 @@ span {
     margin: 10px auto;
     overflow: hidden;
 }
+
+// Sass math operator used below for width property
 
 .left_shirt,
 .middle_shirt,
@@ -64,7 +65,6 @@ span {
     display: block;
     transition: 0.6s;
     transform-style: preserve-3d;
-    position: relative;
 }
 
 .front,
@@ -78,15 +78,18 @@ span {
 .front {
     z-index: 2;
     transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
 }
 
 .back {
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
 }
 
 .flip_container:hover 
         .shirt {
             transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
         }
 
 .shirt_back {
